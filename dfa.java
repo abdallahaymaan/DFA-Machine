@@ -12,8 +12,8 @@ public class dfa {
 		String [] states = first_split[0].split(";");
 		for(String state1 : states) {
 			String[]state_array = state1.split(",");
-			state sss = new state(Integer.parseInt(state_array[0]),Integer.parseInt(state_array[1]), Integer.parseInt(state_array[2]), check(first_split[1].split(","),state_array[0]));
-			dfa_list.add(sss);
+			state new_state = new state(Integer.parseInt(state_array[0]),Integer.parseInt(state_array[1]), Integer.parseInt(state_array[2]), check(first_split[1].split(","),state_array[0]));
+			dfa_list.add(new_state);
 		}
 	}
 	
